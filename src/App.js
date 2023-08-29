@@ -17,9 +17,18 @@ import DeliveryPage from "./extraPages/BottomMenu/FoodDeliverypg";
 import ChristmasPage from "./extraPages/BottomMenu/ChristmasParty";
 import PrivacyComponent from "./extraPages/PrivacyPg";
 import TermsComponent from "./extraPages/TermsPg";
+import {Helmet} from "react-helmet";
 
 function App() {
   return <div>
+
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Dos Sombreros - Mexican restaurant</title>
+      <link rel="canonical" href="https://dossombreros.co.uk/" />
+      <meta name="description" content="Dos Sombreros" />
+    </Helmet>
+
     <Routes>  {/*4 - 5 Routing(2) */}
       <Route path='/' element={<NavBar />} >
         <Route path='/' element={<FooterSection />} >

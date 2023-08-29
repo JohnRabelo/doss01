@@ -13,7 +13,7 @@ const DESSERTS_DATA = [
     {
         Title: 'CHURROS',
         Description: 'TRADITIONAL MEXICAN DOUGHNUTS DUSTED WITH CINNAMON SUGAR AND SERVED WITH WARM CHOCOLATE SAUCE.',
-        Price: '£ 4.95',
+        Price: '£ 5.50',
         ExtraInfo1: false,
         ExtraPrice1: false,
         ExtraInfo2: false,
@@ -23,9 +23,9 @@ const DESSERTS_DATA = [
     {
         Title: 'CHILLI CHOCOLATE BROWNIE',
         Description: 'HOMEMADE CHOCOLATE BROWNIE WITH A LITTLE KICK! SERVED WITH A SCOOP OF VANILLA BEAN ICE CREAM AND WARM CHOCOLATE SAUCE',
-        Price: '£ 5.50',
-        ExtraInfo1:  'TEQUILA SHOT',
-        ExtraPrice1: '£2',
+        Price: '£ 8.75',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
         ExtraInfo2: false,
         ExtraPrice2: false,
         ExtraDetail: false,
@@ -43,7 +43,7 @@ const DESSERTS_DATA = [
     {
         Title: 'MARGARITA SORBET',
         Description: 'LIME & TEQUILA SORBET (Over 18’s ONLY).',
-        Price: '£ 4.25',
+        Price: '£ 5.50',
         ExtraInfo1:  ' TEQUILA SHOT',
         ExtraPrice1: '£2',
         ExtraInfo2: false,
@@ -53,7 +53,7 @@ const DESSERTS_DATA = [
     {
         Title: 'ICE CREAM SUNDAE',
         Description: '3 SCOOPS OF PREMIUM ICE CREAM; VANILLA BEAN, CHOCOLATE OR STRAWBERRY WITH CHOCOLATE SAUCE, WHIPPED CREAM AND WAFERS.',
-        Price: '£ 5.25',
+        Price: '£ 6.50',
         ExtraInfo1:  false,
         ExtraPrice1: false,
         ExtraInfo2: false,

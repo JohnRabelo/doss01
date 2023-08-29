@@ -1,0 +1,122 @@
+.cocktailItemContainer{
+    width: 570px;
+    
+}
+
+.cocktailItem{
+    margin: 20px 10px;
+    width: 550px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;   /*Just put start becaure it won't make diff for description and pic because they occupy all but will let the extra detais at the bottom be on the left */
+
+}
+
+.cocktailItemDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.cocktailItemTitleAndDescription{
+    background-color: #121212;
+    width: 440px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cocktailItemTitleAndDescription p{
+    color: #F9F9F9;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.cocktailItemPrice{
+    width: 50px;
+    height: 50px;
+}
+
+.cocktailItemPrice{
+    width: inherit;
+    height: inherit;
+}
+
+.cocktailItemExtra1{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.cocktailItemExtra{
+    display: flex;
+    margin: auto;
+}
+
+.cocktailItemExtra p{
+    padding: 10px;
+    background-color: #461D3D;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+    margin: 5px;
+    color: #F9F9F9;
+
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 600px) and (max-width: 1139px){
+
+    .cocktailItemExtra1 p{
+        font-size: 14px;
+    }
+    
+    .cocktailItemExtra1{
+
+        justify-content: center;
+
+    }
+
+}
+
+
+
+
+
+@media (min-width:10px) and (max-width: 599px){
+
+
+    .cocktailItemContainer{
+        width: 280px;
+        
+    }
+
+    .cocktailItem{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 250px;
+        height: 200px;
+    
+    }
+    
+    .cocktailItemTitleAndDescription{
+        width: 250px;
+        height: 100px;
+    }
+
+    .cocktailItemExtra{
+        margin: 0px;
+    }
+
+
+}

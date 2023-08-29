@@ -1,0 +1,11 @@
+.privacyContainer{
+    width: 100vh;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 10px;
+    color: gray;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}

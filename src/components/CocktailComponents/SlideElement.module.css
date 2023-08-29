@@ -1,0 +1,42 @@
+.slideElementArea{
+    background-color: #121212;
+    margin-right: 10px;
+    width: 320px;
+    height:  320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slideElementArea img{
+
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 160px;
+}
+
+.elementAreaName{
+ color: #F1F1F1;
+ font-size: 16px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width:10px) and (max-width: 1139px){
+
+    .slideElementArea{
+
+        width: 200px;
+        height: 200px;
+    }
+
+    .slideElementArea img{
+
+        margin-bottom: 30px;
+        margin-top: 20px;
+        width: 100px;
+    }
+
+}
+

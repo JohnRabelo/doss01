@@ -1,0 +1,126 @@
+.General{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #C43C52;
+    font-weight: bold;
+    font-size: 72px;
+}
+
+.gParagraph{
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    font-size: 72px;
+    text-align: center;
+}
+
+.photosList{
+    width: 60vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.photoContainer{
+    width: 26vh;
+}
+
+.photoItem{
+    margin: 10px;
+    width: 24vh;
+    height: 24vh;
+    cursor: pointer;
+}
+
+.photoItem img{
+    width: inherit;
+    height: inherit;
+}
+
+.pTitle{
+    margin-top: 6vh;
+    text-align: center;
+    font-size: 80px;
+}
+
+.pDescription{
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    text-align: center;
+    font-size: 72px;
+}
+
+.jodaButtom{
+    display: block;
+    background-color: #FFA200;
+    color: white;
+    text-transform: uppercase;
+    font-size: 48px;
+    text-decoration: none;
+    padding: 3vh 3vw;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+
+@media (min-width:10px) and (max-width: 3900px){
+
+    .General{
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #C43C52;
+        font-weight: bold;
+        font-size: 32px;
+    }
+
+    .gParagraph{
+        margin-top: 6vh;
+        margin-bottom: 6vh;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .pDescription{
+        margin-top: 6vh;
+        margin-bottom: 6vh;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .pTitle{
+        margin-top: 6vh;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .jodaButtom{
+        display: block;
+        background-color: #FFA200;
+        color: white;
+        text-transform: uppercase;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 3vh 3vw;
+        margin-top: 6vh;
+        margin-bottom: 6vh;
+    }
+    
+    
+}
+
+
+@media (min-width:10px) and (max-width: 309px){
+    .jodaButtom{
+        font-size: 18px;
+    }
+}
+
+

@@ -1,0 +1,21 @@
+.cocktailContainer{
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+@media (min-width:10px) and (max-width: 599px){
+
+
+    .cocktailContainer{
+        width: 280px;
+    }
+    
+
+
+
+}

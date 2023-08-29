@@ -1,0 +1,52 @@
+.home-page{
+    background-color: #FFF4E6;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.home-page .section-description{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.red-text{
+    color: #C43C52;
+    font-size: 22px;
+}
+
+.green-text{
+    color: #9FB876;
+    font-size: 22px;
+}
+
+.home-address{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-address-link{
+
+}
+
+.lizzard{
+    padding-top: 60px;
+}
+
+.bienvenido{
+    padding-top: 40px;
+    max-width: 1000px;
+    margin: auto;
+    color: #C43C52;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+}
+
+.trip-advisor{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}

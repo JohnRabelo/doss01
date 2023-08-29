@@ -1,0 +1,256 @@
+
+
+header {
+    height: 8vh;
+    min-height: 100px;
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 4px solid #FF4E00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header { /*Has to do with the constrained area of 1140 ox for putting logo + written menu*/
+      /*This is where the "flexed" logo area starts */
+    width: 40vw;
+    /*margin: auto; for putting it in the centre */
+    display: flex; /*flexbox content inside header*/
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{ /*Has to do with the SPACE for putting the logo */
+    align-items: center;
+    display: flex;
+    
+
+}
+
+.logoimg { /*Has to do with the logo itself */
+    background-color: #000000;
+}
+
+.logoimg img{
+    width: 10vw;
+}
+
+.skull{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skullImg{
+    width: 3vw;
+}
+
+
+
+.menu{  /*Has to do with the written menu*/
+    flex: 1;/*For it to use the rest of space available   "flex1 is in relation to the outer div*/
+    display: flex; /*related to .menu itself */
+    justify-content: center; /*Align to the right*/
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu ul,   /*apply to both */
+.menu li {
+    list-style: none;    
+}
+
+.menu ul{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navigLink { /*Being specific: apply to the inner */
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.6vh;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.navigLink:hover{
+    color: #FF4E00;
+}
+
+a.active{
+    color: #FF4E00;
+}
+
+.menuOpenerContainer{
+display: none;
+}
+
+
+
+
+@media (min-width:450px) and (max-width: 840px){
+    
+    .nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 50vw;
+        height: fit-content;
+        top: 100px;
+        right: 0;
+    }
+
+    header { 
+        justify-content: center;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .navigLink{
+        font-weight: bold;
+        height: 80px;
+        font-size: 27px;
+        margin-left: 50px;
+        border: 0;
+    }
+
+    .menuOpenerContainer{
+        z-index: 100;
+        width: 30px;
+        height: 30px;
+        background-color: black;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+
+    .menuOpener{
+        width: 40px;
+        height: 40px;
+        opacity: 0.8;
+
+    }
+
+    .logo{ 
+        width: 40vw;
+    }
+
+    .logoimg{
+        width: 40vw;
+    }
+
+    .logo img{
+        width: 240px;
+    }
+
+
+    .skull{
+        display: none;
+    }
+
+}
+
+
+@media (min-width:10px) and (max-width: 449px){
+    
+    .nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 70vw;
+        height: fit-content;
+        top: 100px;
+        right: 0;
+    }
+
+    header { 
+        justify-content: center;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .navigLink{
+        font-weight: bold;
+        height: 80px;
+        font-size: 27px;
+        margin-left: 50px;
+        border: 0;
+    }
+
+    .menuOpenerContainer{
+        z-index: 100;
+        width: 30px;
+        height: 30px;
+        background-color: black;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+
+    .menuOpener{
+        width: 40px;
+        height: 40px;
+        opacity: 0.8;
+
+    }
+
+    .logo{ 
+        width: 40vw;
+    }
+
+    .logoimg{
+        width: 40vw;
+    }
+
+    .logo img{
+        width: 160px;
+    }
+
+
+    .skull{
+        display: none;
+    }
+
+}
+
+
+@media (orientation: landscape) and (min-width: 840px) and (max-width:1300px){
+    .navigLink{
+        font-size: 2.6vh;
+    }
+}
+
+
+@media (min-width:10px) and (max-width: 309px){
+    
+    .logo{ 
+        width: 30vw;
+    }
+
+    .logoimg{
+        width: 30vw;
+    }
+
+    .logo img{
+        width: 126px;
+    }
+
+}

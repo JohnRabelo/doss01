@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Real size with the borders */
+}
+
+body{
+    font-family: 'Sanchez', 'Arial', 'Helvetica', sans-serif;
+    font-size: 20px;
+    overflow-x: hidden;
+    background-color: #FFF4E6;
+}
+
+
+
+
+
+
+/*  Part 2 bannerArea ------------------------------------------------------------------- */
+
+.banner{
+    width: 100vw;
+    /*height: calc(100vh - 260px); /*
+    background-color: #FFF4E6;
+    /*background-image: url('../assets/images/dsPhotos/banner/bannerPhoto.JPG'); */
+    /*background-size: cover;*/
+    overflow: hidden;
+}
+
+.bannerContainer{
+    width: 100vw;
+}
+
+.bannerContainer img{
+    width: inherit;
+}
+
+.banner .slides{
+    width: 1000vw;
+    height: 100%;
+    background-color:#FFF4E6;
+}
+
+.banner .slide{
+    width: 100vw;
+    height: 100%; /*Covers the whole banner area available*/
+    background-color: rgba(0,0,0, 0.8);
+}
+
+/*  Part 3 def ------------------------------------------------------------------- */
+
+
+.homePage{
+    background-color: #FFF4E6;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.homePage .sectionDescription{
+    margin-top: 10vh;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 120px;
+    font-weight: bold;
+    color: #000;
+}
+
+.redText{
+    color: #C43C52;
+    font-size: 120px;
+}
+
+.greenText{
+    color: #9FB876;
+    font-size: 120px;
+}
+
+.homeAddress{
+    margin-top: 10vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.middleImages{
+    width: 20vw;
+    background-color: #9FB876;
+}
+
+.homeAddressLink{
+    height: 30vh;
+}
+
+.lizzard img{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 100vw;
+}
+
+.bienvenido{
+    max-width: 80vw;
+    margin: auto;
+    color: #C43C52;
+    font-weight: bold;
+    text-align: center;
+    font-size: 120px;
+}
+
+.tripAdvisor{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.tripAdvisor img{
+    height: 16vh;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width:841px) and (max-width: 1400px){
+    .homePage .sectionDescription{
+        margin-top: 10vh;
+        text-align: center;
+        padding-top: 60px;
+        font-size: 3vw;
+    }
+    
+    .redText{
+        color: #C43C52;
+        font-size: 3vw;
+    }
+    
+    .greenText{
+        color: #9FB876;
+        font-size: 3vw;
+    }
+
+    .bienvenido{
+        max-width: 80vw;
+        margin: auto;
+        color: #C43C52;
+        font-weight: bold;
+        text-align: center;
+        font-size: 3vw;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media (min-width:450px) and (max-width: 840px){
+
+    .homeAddressLink{
+        height: inherit;
+    }
+
+    .banner{
+        width: 100vw;
+        height: 40vh;
+        background-image: url('../assets/images/dsPhotos/banner/homeBannerEdited.jpg');
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: bottom;
+    }
+    
+    .bannerContainer{
+        width: 100vw;
+        height: 40vh;
+        max-width: 1139px;
+    }
+    
+    .bannerContainer img{
+        display: none;
+    }
+
+
+    .homePage {
+        width: 80vw;
+        font-size: 20px;
+    }
+
+    .homeAddress{
+        flex-direction: column;
+        align-items: center ;
+    }
+
+    .homeAddress img{
+        width: 240px;
+    }
+
+
+    .lizzard{
+        width: 100vw;
+    }
+
+    .lizzard img{
+        width: 100vw;
+    }
+
+    .homePage .sectionDescription{
+        margin-top: 10vh;
+        text-align: center;
+        padding-top: 60px;
+        font-size: 4vw;
+    }
+    
+    .redText{
+        color: #C43C52;
+        font-size: 4vw;
+    }
+    
+    .greenText{
+        color: #9FB876;
+        font-size: 4vw;
+    }
+
+    .bienvenido{
+        max-width: 80vw;
+        margin: auto;
+        color: #C43C52;
+        font-weight: bold;
+        text-align: center;
+        font-size: 4vw;
+    }
+
+
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media (min-width:10px) and (max-width: 449px){
+
+
+    .banner{
+        width: 100vw;
+        height: 40vh;
+        background-image: url('../assets/images/dsPhotos/banner/homeBannerMobile.jpg');
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: bottom;
+    }
+    
+    .bannerContainer{
+        width: 100vw;
+        height: 40vh;
+        max-width: 1139px;
+    }
+    
+    .bannerContainer img{
+        display: none;
+    }
+
+    .homePage {
+
+        width: 80vw;
+        font-size: 20px;
+
+    }
+
+    .homeAddress{
+        flex-direction: column;
+        align-items: center ;
+    }
+
+    .homeAddress img{
+        width: 240px;
+    }
+
+
+    .lizzard{
+        width: 100vw;
+    }
+
+    .lizzard img{
+        width: 100vw;
+    }
+
+    .homePage .sectionDescription{
+        margin-top: 10vh;
+        text-align: center;
+        padding-top: 60px;
+        font-size: 5vw;
+    }
+    
+    .redText{
+        color: #C43C52;
+        font-size: 5vw;
+    }
+    
+    .greenText{
+        color: #9FB876;
+        font-size: 5vw;
+    }
+
+    .bienvenido{
+        max-width: 80vw;
+        margin: auto;
+        color: #C43C52;
+        font-weight: bold;
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .homeAddressLink{
+        height: inherit;
+    }
+    
+
+} 

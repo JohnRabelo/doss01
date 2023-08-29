@@ -1,0 +1,227 @@
+.menus{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 80vw;
+    margin-top: 6vh;
+
+
+}
+
+.menusImg{
+    width: 9vw;
+    height: 6vh;
+}
+
+.menuButtom{
+
+    margin: 60px 20px;
+
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.lnchOrganizer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.lnchBannerContainer{
+    width: 56vw;
+    margin: 40px 0px;
+    padding: 30px 10px;
+    color: #c70928;
+    background-color: white;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.lnchBannerContainer p{
+    width: inherit;
+    max-width: inherit;
+}
+
+.lnchSectionTitle{
+    width: 70vw;
+    margin: 6vh 0vw;
+    font-size: 100px;
+    display: flex;
+    justify-content: start;
+}
+
+.lnchItemTitleAndDescription{
+    width: 70vw;
+    margin: 4vh 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.lnchTitle{
+    font-size: 80px;
+    color: #FF7022;
+    margin-bottom: 14px;
+}
+
+.lnchDescription{
+    font-size: 70px;
+    color: #b20412;
+}
+
+.menuParagraphs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 100vw;
+    color: #4e7221;
+    font-size: 80px;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width:450px) and (max-width: 3900px){
+
+
+    .menus{
+
+        width: 100vw;
+        max-width: 980px;
+    
+    }
+
+    .menuAreas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .menus img{
+        width: 160px;
+        height: 50px;
+    }
+    
+    .menuButtom{
+        margin: 60px 10px;
+    }
+
+    .lnchBannerContainer{
+        margin-top: 10px;
+        width: 80vw;
+        font-size: 30px;
+    }
+    
+    .menuParagraphs{
+        width: 80vw;
+        font-size: 26px;
+        margin: 100px 80px;
+    }
+
+
+    .lnchSectionTitle{
+        justify-content: center;
+        font-size: 30px;
+        margin-top: 110px;
+    }
+
+
+    .lnchItemTitleAndDescription{
+        width: 80vw;
+        margin: auto;
+        margin-top: 120px;
+
+    }
+    
+    .lnchTitle{
+        font-size: 30px;
+        color: #FF7022;
+        margin-bottom: 14px;
+    }
+    
+    .lnchDescription{
+        font-size: 20px;
+        color: #b20412;
+    }
+
+
+    
+}
+
+
+@media (min-width:10px) and (max-width: 700px){
+
+    .menus{
+        width: 60vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+
+    .menus img{
+        width: 140px;
+        height: 40px;
+    }
+    
+    .menuButtom{
+        margin: 10px 20px;
+    }
+
+    .menuButtom:hover{
+        border-bottom: 4px solid #FF7022;
+    }
+
+
+    .lnchBannerContainer{
+        width: 70vw;
+        font-size: 16px;
+        line-height: 30px;
+        margin: 0px;
+    }
+
+    .menuParagraphs{
+        width: 80vw;
+        font-size: 24px;
+    }
+
+    .lnchSectionTitle{
+        justify-content: center;
+        font-size: 20px;
+    }
+
+
+    .lnchItemTitleAndDescription{
+        width: 80vw;
+        margin: auto;
+    }
+
+    .lnchTitle{
+        font-size: 20px;
+        color: #FF7022;
+        margin-bottom: 14px;
+    }
+
+    .lnchDescription{
+        font-size: 16px;
+        color: #b20412;
+    }
+
+}
+
+
+@media (min-width:10px) and (max-width: 449px){
+    .lnchItemTitleAndDescription{
+
+        margin-top: 60px;
+    }
+
+}

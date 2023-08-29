@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Real size with the borders */
+}
+
+body{
+    font-family: 'Sanchez', 'Arial', 'Helvetica', sans-serif;
+    font-size: 20px;
+    overflow-x: hidden;
+    background-color: #FFF4E6;
+}
+
+
+header {
+    height: 110px;
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 4px solid #FF4E00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header { /*Has to do with the constrained area of 1140 ox for putting logo + written menu*/
+    max-width: 1000px;  /*This is where the "flexed" logo area starts */
+    height: 100px;
+    /*margin: auto; for putting it in the centre */
+    display: flex; /*flexbox content inside header*/
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{ /*Has to do with the SPACE for putting the logo */
+    height: 100px;
+    align-items: center;
+    flex: 2;
+    display: flex;
+}
+
+.logoimg { /*Has to do with the logo itself */
+    background-color: #000000;
+}
+
+.skull{
+    flex: 2;
+    display: flex;
+}
+
+
+.menu{  /*Has to do with the written menu*/
+    flex: 1;/*For it to use the rest of space available   "flex1 is in relation to the outer div*/
+    display: flex; /*related to .menu itself */
+    justify-content: center; /*Align to the right*/
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu ul,   /*apply to both */
+.menu li {
+    list-style: none;    
+}
+
+.menu ul{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu li a { /*Being specific: apply to the inner */
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.menu li a:hover,
+.menu .active a {
+    color: #FF4E00;
+}

@@ -1,0 +1,414 @@
+.menus{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 80vw;
+    margin-top: 6vh;
+
+
+}
+
+.menusImg{
+    width: 9vw;
+    height: 6vh;
+}
+
+.menuButtom{
+
+    margin: 60px 20px;
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+.menuLayout{
+    width: 80vw;
+    margin: auto;
+}
+
+
+.menuAreas{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.mTitle{
+    padding-left: 140px;
+    padding-top: 10vh;
+    font-size: 120px;
+    margin-bottom: 20px;
+    width: 80vw;
+
+}
+
+.saladObs{
+    display: block;
+    padding-left: 140px;
+    font-size: 70px;
+    color: #FF7022;
+    margin-top: 6vh; 
+   
+}
+
+.especDescription p{
+    margin-top: 3vh;
+    padding-left: 140px;
+    font-size: 70px;
+    color: #FF7022;
+    text-align: justify;
+    margin-bottom: 40px;
+
+}
+
+.sidesTitleDescript{
+    padding-left: 14px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.soulTitles{
+    font-size: 120px;
+    margin-left: 2vw;
+}
+
+
+.accompany{
+    font-size: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    color: #BB455F;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-left: 2vw;
+    padding: 40px;
+}
+
+.menuDisclaimer{
+    width: 30vw;
+    font-size: 68px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BB455F;
+    font-weight: 600;
+    margin-top: -20px;
+    margin-left: 2vw;
+    padding: 60px;
+}
+
+
+
+.sidesSpaceDivision{
+    display: flex;
+}
+
+.menuParagraphs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 100vw;
+    color: #90B95D;
+    font-size: 100px;
+    margin-top: 8vh;
+    margin-bottom: 10vh;
+}
+
+.menuParagraphs p{
+    margin: 10px;
+}
+
+.menuParagraphs span{
+    color: #000;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+@media (min-width:490px) and (max-width: 3900px){
+
+
+    .menus{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 80vw;
+        max-width: 1140px;    
+    }
+    
+    .menus img{
+        width: 180px;
+        height: 60px;
+    }
+    
+    .menuButtom{
+    
+        margin: 2vw 1vw;
+    
+    }
+
+
+
+    .menuLayout{
+        width: 80vw;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .menuAreas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .mTitle{
+        padding-left: 14px;
+        padding-top: 10vh;
+        font-size: 32px;
+        margin-bottom: 20px;
+        width: 20vw;
+    
+    }
+    
+    .saladObs{
+        display: block;
+        padding-left: 14px;
+        font-size: 20px;
+        color: #FF7022;
+        margin-top: 10vh;
+        margin-bottom: 6vh; 
+       
+    }
+    
+    .especDescription p{
+        margin-top: 3vh;
+        padding-left: 14px;
+        font-size: 20px;
+        color: #FF7022;
+        text-align: justify;
+        margin-bottom: 40px;
+    
+    }
+    
+    .sidesTitleDescript{
+        margin-bottom: 60px;
+    }
+    
+    .soulTitles{
+        font-size: 32px;
+
+    }
+    
+    
+    .accompany{
+        font-size: 18px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        color: #BB455F;
+        font-weight: 600;
+        margin-top: 60px;
+        padding: 20px;
+    }
+    
+    .menuDisclaimer{
+        width: 570px;
+        font-size: 14px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #BB455F;
+        font-weight: 600;
+        margin-top: 6vh;
+        margin-bottom: 10vh;
+        margin-left: 0vw;
+        padding: 20px;
+    }
+    
+    .sidesSpaceDivision{
+        display: flex;
+    }
+    
+    .menuParagraphs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        width: 80vw;
+        max-width: 700px;
+        color: #90B95D;
+        font-size: 32px;
+        margin-top: 8vh;
+        margin-bottom: 10vh;
+    }
+    
+    .menuParagraphs p{
+        margin: 10px;
+    }
+    
+    .menuParagraphs span{
+        color: #000;
+    }
+      
+
+}
+
+
+@media (min-width:10px) and (max-width: 800px){
+
+    .menus{
+        width: 60vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        max-width: 300px;
+    }
+
+    .menus img{
+        width: 140px;
+        height: 40px;
+    }
+    
+    .menuButtom{
+        margin: 10px 20px;
+    }
+
+    .menuButtom:hover{
+        border-bottom: 4px solid #FF7022;
+    }
+ 
+
+}
+
+@media (min-width:10px) and (max-width: 629px){
+
+    
+    
+
+
+    .menuLayout{
+        width: 80vw;
+        margin: auto;
+    }
+
+
+    .menuAreas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .mTitle{
+        font-size: 22px;
+        padding-left: 0px;
+        width: 80vw;
+    }
+
+    .saladObs{
+        display: block;
+        padding-left: 14px;
+        font-size: 20px;
+        color: #FF7022;
+        margin-top: 10vh;
+        margin-bottom: 6vh; 
+       
+    }
+    
+    .especDescription p{
+        margin-top: 3vh;
+        padding-left: 14px;
+        font-size: 20px;
+        color: #FF7022;
+        text-align: justify;
+        margin-bottom: 40px;
+    
+    }
+    
+    .sidesTitleDescript{
+        padding-left: 14px;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .soulTitles{
+        font-size: 32px;
+    }
+
+    
+    .accompany{
+        font-size: 18px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        color: #BB455F;
+        font-weight: 600;
+        margin-top: 60px;
+        padding: 20px;
+        max-width: 300px;
+    }
+    
+    .menuDisclaimer{
+        width: 80vw;
+        font-size: 14px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #BB455F;
+        font-weight: 600;
+        margin: auto;
+        margin-top: 6vh;
+        margin-bottom: 10vh;
+        padding: 40px;
+    }
+    
+    .sidesSpaceDivision{
+        display: flex;
+    }
+    
+    .menuParagraphs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        width: 80vw;
+        max-width: 700px;
+        color: #90B95D;
+        font-size: 22px;
+        margin-top: 8vh;
+        margin-bottom: 10vh;
+    }
+    
+    .menuParagraphs p{
+        margin: 10px;
+    }
+    
+    .menuParagraphs span{
+        color: #000;
+    }
+      
+
+
+    .sidesSpaceDivision{
+        flex-direction: column;
+    }
+
+
+}

@@ -1,0 +1,239 @@
+.menuItemContainer{     /* Just to make room for divs beside each other to have margins. The same olgic as spcing gallery photos*/
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.menuItem{   /* column inside the item for the description to stay above the extra info */
+    margin: auto;
+    margin: 10px 0px;
+    margin-right: 0px;
+    width: 36vw;
+    height: 26vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;   /*Just put start because it won't make diff for description and pic because they occupy all but will let the extra detais at the bottom be on the left */
+
+
+}
+
+.menuItemDetails{  /*row for the image to be beside the description*/
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.menuItemTitleAndDescription{
+    color: #FF7022;
+    font-size: 100px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.menuItemPrice{
+    height: 80px;  /*Donno why this height governs all heights inside menuItemTitleAndDescription and IT'S 100px BY DEFAULT??*/
+
+}
+
+.menuItemPrice img{
+    width: 280px;
+    height: 280px;
+}
+
+.menuItemPrice span{
+    display: block;
+    position:relative;
+    top: -180px;
+    left: 40px;
+    color: #fff;
+    font-size: 64px;
+    width: 10vw;
+}
+
+.extraInfoOrganiser{
+    display: flex;
+    margin-top: 2vh;
+
+}
+
+
+
+.menuDescription{
+    color: #7D390C;
+    font-size: 80px;
+    margin-top: 14px;
+}
+
+
+
+
+@media (min-width:490px) and (max-width: 3900px){
+    .menuItemContainer{     /* Just to make room for divs beside each other to have margins. The same olgic as spcing gallery photos*/
+        width: 570px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .menuItem{   /* column inside the item for the description to stay above the extra info */
+        margin: auto;
+        margin: 10px 0px;
+        margin-right: 0px;
+        width: 540px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;   /*Just put start because it won't make diff for description and pic because they occupy all but will let the extra detais at the bottom be on the left */
+    
+    
+    }
+    
+    .menuItemDetails{  /*row for the image to be beside the description*/
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        
+    }
+    
+    .menuItemTitleAndDescription{
+        color: #FF7022;
+        font-size: 20px;
+        max-width: 460px;
+        width: 440px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    
+    .menuItemPrice{
+        height: 80px;  /*Donno why this height governs all heights inside menuItemTitleAndDescription and IT'S 100px BY DEFAULT??*/
+    
+    }
+    
+    .menuItemPrice img{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .menuItemPrice span{
+        display: block;
+        position:relative;
+        top: -56px;
+        left: 14px;
+        color: #fff;
+        font-size: 18px;
+        width: 10vw;
+    }
+    
+    .extraInfoOrganiser{
+        display: flex;
+        margin-top: 2vh;
+    
+    }
+    
+    
+    
+    .menuDescription{
+        color: #7D390C;
+        font-size: 18px;
+        margin-top: 14px;
+    }
+
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width:10px) and (max-width: 629px){
+
+    .menuItemContainer{     /* Just to make room for divs beside each other to have margins. The same olgic as spcing gallery photos*/
+        width: 80vw;
+        max-width: 380px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .menuItem{   /* column inside the item for the description to stay above the extra info */
+        margin: auto;
+        margin: 10px 0px;
+        margin-right: 0px;
+        width: 80vw;
+        max-width: 350px;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: start;   /*Just put start because it won't make diff for description and pic because they occupy all but will let the extra detais at the bottom be on the left */
+    }
+    
+    .menuItemDetails{  /*row for the image to be beside the description*/
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        
+    }
+    
+    .menuItemTitleAndDescription{
+        color: #FF7022;
+        font-size: 20px;
+        max-width: 250px;
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+
+    }
+    
+    .menuItemPrice{
+        height: 80px;  /*Donno why this height governs all heights inside menuItemTitleAndDescription and IT'S 100px BY DEFAULT??*/
+    }
+    
+    .menuItemPrice img{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .menuItemPrice span{
+        display: block;
+        position:relative;
+        top: -56px;
+        left: 14px;
+        color: #fff;
+        font-size: 18px;
+        min-width: 60px;
+
+    }
+    
+    .extraInfoOrganiser{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vh;
+    
+    }
+        
+    .menuDescription{
+        color: #7D390C;
+        font-size: 18px;
+        margin-top: 14px;
+    }
+
+    
+}
+
+
+
+
+
+

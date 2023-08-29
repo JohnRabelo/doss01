@@ -1,0 +1,426 @@
+
+.default{
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.default .sectionTitle,
+.default .sectionDesc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .sectionTitle{
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.default .sectionDesc{
+    font-size: 13px;
+    color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+.default .sectionBody{
+    max-width: 1140px;
+    margin: auto;
+    
+    
+}
+
+.sectionTeam{
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+}
+
+.ssliders{
+    width: 1000vw;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+}
+
+.sslide{
+    width: 280px;
+    height: 100%;
+    display: inline-block;
+    margin-right: 20px;
+    background-color: #FFF4E6;
+    min-height: 300px;
+}
+
+.sslideArea{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #462f2f;
+    flex-direction: column;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.cocktailGn{
+    background-color: #F1F1F1;
+}
+
+.cocktBannerContainer{  /* 1 - The Outer occupies the whole space available and is used for centering the other divs */
+    display: flex;         
+    justify-content: center;
+
+}
+
+.cocktBanner{  /* 2 - The middle occupies a restricted 1140px area to delimit and show 3 items only by putting overflow hidden */
+    margin-top: 20px;
+    width: 100vw;
+    max-width: 980px;
+    overflow-x: hidden;
+
+}
+
+
+.cocktSlideContainer{  /* 3 - The iiner is a items manager with enough width(much more than the middle) to house all items and starting at the 1st element */
+    /*margin-left: -330px; */    
+    width: 1970px;
+    display: flex;
+    justify-items: start;
+    align-items: center;
+    margin-left: -210px;
+
+    
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.cktBanner{
+    background-color: #FFF4E6;
+    overflow: hidden;
+    width: 100vw;
+
+}
+
+.cktbannerContainer{
+    width: 100vw;
+    max-width: 1140px;
+}
+
+
+.cktbannerContainer img{
+    width: inherit;
+    object-fit: cover;
+}
+
+.cktStatement{
+    width: 80vw;
+    max-width: 410px;
+    height: inherit;   
+    margin: auto; /* For the item itself, not child components */
+    margin-top: 80px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.greenTxt{
+    color: #9FB876;
+    font-size: 30px;
+}
+
+.cktTexts{
+    width: 80vw;
+    max-width: 980px;
+    height: 50px;   
+    margin: auto; /* For the item itself, not child components */
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+
+}
+
+.cktText2{
+    width: 90vw;
+    max-width: 980px;
+    height: 50px;   
+    margin: auto; /* For the item itself, not child components */
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+
+}
+
+.cktTexts3{
+    width: 100vw;
+    max-width: 980px;
+    height: 100px;   
+    margin: auto; /* For the item itself, not child components */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #F9F9F9;
+}
+
+.cktTextsp{
+    color: #B0ACAD;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cktTextspgr2{
+    padding: 10px;
+    background-color: #461D3D;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+    margin: 5px 20px;
+    color: #F9F9F9;
+
+}
+
+.cktTextspgr3{
+    padding: 10px;
+    background-color: #696868;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 0px;
+    color: #F9F9F9;
+
+}
+
+.cktTextspgr4{
+    padding: 10px;
+    background-color: #461D3D;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 3px;
+    color: #F9F9F9;
+
+}
+
+.tequilaArea{
+    background-color: #F9F9F9;    
+}
+
+.cocktailSectionArea{
+    background-color: #F1F1F1;
+}
+
+.tequilaAreas{
+    width: 100vw;
+    max-width: 1140px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: #F9F9F9;
+    margin-bottom: 100px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media (min-width:600px) and (max-width: 1139px){
+
+
+    
+.cktBanner{
+    width: 100vw;
+    height: 40vh;
+    background-image: url('../assets/images/dsPhotos/banner/cocktailBannerMobile.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+
+.cktbannerContainer{
+    width: 100vw;
+    height: 40vh;
+    max-width: 1139px;
+}
+
+
+.cktbannerContainer img{
+    display: none;
+}
+
+
+.cocktBanner{  /* 2 - The middle occupies a restricted 1140px area to delimit and show 3 items only by putting overflow hidden */
+    margin-top: 20px;
+    width: 100vw;
+    max-width: 410px;
+    overflow-x: hidden;
+
+}
+
+
+.cocktSlideContainer{  /* 3 - The iiner is a items manager with enough width(much more than the middle) to house all items and starting at the 1st element */
+    /*margin-left: -330px; */    
+    width: 1250px;
+    display: flex;
+    justify-items: start;
+    align-items: center;
+
+    
+}
+
+.cktTexts{
+    margin-top: 20px;
+    max-width: 600px;
+    justify-content: center;
+}
+
+.cktText2{
+    margin-top: 40px;
+    max-width: 410px;
+}
+
+.cktTexts3{
+    max-width: 410px;
+}
+
+.cktTextsp{
+    color: #636260;
+}
+
+.cktTextspgr2{
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #F9F9F9;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+
+
+
+
+.tequilaAreas{
+    width: 80vw;
+    max-width: 800px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+}
+
+
+@media (min-width:10px) and (max-width: 599px){
+
+
+    .cktBanner{
+        width: 100vw;
+        height: 40vh;
+        background-image: url('../assets/images/dsPhotos/banner/cocktailBannerMobile.jpg');
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: bottom;
+    }
+    
+    .cktbannerContainer{
+        width: 100vw;
+        height: 40vh;
+        max-width: 1139px;
+    }
+    
+    
+    .cktbannerContainer img{
+        display: none;
+    }
+
+
+
+
+    .cocktBanner{  /* 2 - The middle occupies a restricted 1140px area to delimit and show 3 items only by putting overflow hidden */
+        max-width: 200px;   
+       
+    }
+    
+    
+    .cocktSlideContainer{  /* 3 - The iiner is a items manager with enough width(much more than the middle) to house all items and starting at the 1st element */
+        /*margin-left: -330px; */    
+        width: 1200px;  
+        
+    }
+
+    .cktTexts{
+        margin-top: 20px;
+        max-width: 200px;
+        margin-top: 60px;
+        height: 100px;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    
+    .cktText2{
+        margin-top: 40px;
+        max-width: 200px;
+    }
+    
+    .cktTexts3{
+        max-width: 200px;
+    }
+
+    .cktTextsp{
+        font-size: 30px;
+    }
+
+    .cktTextspgr2{
+        padding: 12px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #F9F9F9;
+        margin: 0px;
+        margin-top: 10px;
+    
+    }
+
+    .cktTextspgr3{
+        background-color: #696868;
+        font-size: 12px;
+    
+    }
+
+    .tequilaAreas{
+        width: 80vw;
+        max-width: 300px;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+
+
+    .cktStatement{
+        font-size: 22px;
+    }
+    
+    .greenTxt{
+
+        font-size: 22px;
+    }
+
+}

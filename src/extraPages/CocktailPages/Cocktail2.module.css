@@ -1,0 +1,59 @@
+.defaultCard{
+    background-color: #F1F1F1;;
+   }
+   
+   .cardTitle{
+   
+   }
+   
+   .cardDesc{
+   
+   }
+   
+   .cardBody{
+   
+   }
+   
+   .cardDrinks{
+   
+   }
+   
+   
+   .slideElements{
+   
+   }
+   
+   .slideElement{
+       
+   
+       
+   }
+   
+   
+   
+   .slideElements2{
+       max-width: 1140px;
+       margin: auto;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       font-weight: bold;
+       font-size: 20px;
+       background-color: #ff0000;
+   }
+   
+   .slideElement2{
+       
+       width: 100vw;
+       max-width: 1030px;
+       margin-top: 20px;
+       margin-bottom: 30px;
+       display: flex;
+       background-color: aqua;
+       justify-content: start;
+       overflow: hidden;
+       
+   }
+   
+   
+   

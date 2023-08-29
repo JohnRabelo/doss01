@@ -1,0 +1,147 @@
+.footerGeneral{
+    width: 100vw;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ft{
+    width: inherit;
+    max-width: inherit;
+    /*background-image: url('../assets/images/dsPhotos/banner/footer.JPG');*/
+    /*background-size: cover; */
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+
+}
+
+.ft img{
+    width: inherit;
+    margin-top: -20px;
+}
+
+
+
+.bottomMenuContainer{
+    width: inherit;
+    max-width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 60px;
+    background-color: black;
+    text-align: center;
+
+}
+
+
+li{
+    list-style: none;
+    color: #8D462F;
+    font-size: 60px;
+    display: inline-block;
+    padding: 4px;
+}
+
+li:hover{
+    color:#c96412;
+}
+
+li span{
+    color:#402000;
+    height: 12px;
+}
+
+.dsName{
+    color: #8D462F;
+    font-size: 60px;
+    padding: 4px;
+    background-color: black;
+    display: block;
+}
+
+@media (min-width:941px) and (max-width: 1400px){
+
+    .dsName{
+        font-size: 2vw;
+    }
+
+    
+    li{
+        font-size: 2vw;
+    }
+
+}
+
+
+
+@media (min-width:600px) and (max-width: 940px){
+
+    .bottomMenuContainer{
+        width: 100vw;
+        max-width: 800px;
+    }
+
+    .ft{
+        width: inherit;
+        height: 260px;
+        max-width: inherit;
+        background-image: url('../assets/images/dsPhotos/banner/footerIpad.jpg');
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: -10px;
+    }
+    
+    .ft img{
+        display: none;
+    }
+
+    .dsName{
+        font-size: 3vw;
+    }
+
+    li{
+        list-style: none;
+        font-size: 3vw;
+        display: inline-block;
+        padding: 4px;
+    }
+
+}
+
+@media (min-width: 10px) and (max-width: 599px){
+
+    .dsName{
+        font-size: 4vw;
+    }
+
+
+    li{
+
+        font-size: 18px;
+                                                                
+
+    }
+
+    .ft{
+        width: inherit;
+        height: 260px;
+        max-width: inherit;
+        background-image: url('../assets/images/dsPhotos/banner/footerIpad.jpg');
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: -10px;
+    }
+    
+    .ft img{
+        display: none;
+    }
+
+
+}

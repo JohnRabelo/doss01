@@ -1,0 +1,229 @@
+.menus{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 80vw;
+    margin-top: 6vh;
+
+
+}
+
+.menusImg{
+    width: 9vw;
+    height: 6vh;
+}
+
+.menuButtom{
+
+    margin: 60px 20px;
+
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+.menuLayout{
+    width: 80vw;
+    margin: auto;
+}
+
+
+.menuAreas{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+}
+
+.menuAreaIndiv{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 40px;
+}
+
+.mTitle{
+    padding-left: 9.6vw;
+    font-size: 120px;
+    margin-top: 6vh;
+    margin-bottom: 40px;
+    width: 30vw;
+}
+
+.saladObs{
+    display: block;
+    padding-left: 14px;
+    font-size: 24px;
+    color: #FF7022;
+    margin-top: 40px; 
+   
+}
+
+.especDescription p{
+    margin-top: 40px;
+    padding-left: 14px;
+    font-size: 22px;
+    color: #FF7022;
+    text-align: justify;
+    margin-bottom: 40px;
+
+}
+
+.sidesTitleDescript{
+    padding-left: 14px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.soulTitles{
+    font-size: 36px;
+}
+
+
+.accompany{
+    font-size: 18px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    color: #BB455F;
+    font-weight: 600;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.menuDisclaimer{
+    width: 570px;
+    font-size: 14px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BB455F;
+    font-weight: 600;
+    margin-top: -20px;
+    padding: 20px;
+}
+
+
+
+.sidesSpaceDivision{
+    display: flex;
+}
+
+.menuParagraphs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 100vw;
+    color: #90B95D;
+    font-size: 70px;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+.menuParagraphs p{
+    margin: 10px;
+}
+
+.menuParagraphs span{
+    color: #000;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+@media (min-width:450px) and (max-width: 3900px){
+
+
+    .menus{
+
+        width: 100vw;
+        max-width: 980px;
+    
+    }
+
+
+
+    .menus img{
+        width: 160px;
+        height: 50px;
+    }
+    
+    .menuButtom{
+        margin: 60px 10px;
+    }
+
+    .mTitle{
+        margin-top: 60px;
+        width: 80vw;
+        font-size: 22px;
+    }
+
+    .menuParagraphs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        width: 80vw;
+        max-width: 700px;
+        color: #90B95D;
+        font-size: 24px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
+
+
+
+}
+
+
+@media (min-width:10px) and (max-width: 700px){
+
+    .menus{
+        width: 60vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+
+    .menus img{
+        width: 140px;
+        height: 40px;
+    }
+    
+    .menuButtom{
+        margin: 10px 20px;
+    }
+
+    .menuButtom:hover{
+        border-bottom: 4px solid #FF7022;
+    }
+
+
+    
+
+}
+
+
+@media (min-width:10px) and (max-width: 449px){
+
+    .menuLayout{
+        width: 80vw;
+        margin: auto;
+    }
+
+
+    .mTitle{
+        margin-top: 60px;
+        width: 80vw;
+        font-size: 20px;
+    }
+
+    .menuParagraphs{
+        font-size: 22px;
+        width: 80vw;
+    }
+}

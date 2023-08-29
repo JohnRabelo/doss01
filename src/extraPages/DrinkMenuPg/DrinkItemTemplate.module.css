@@ -1,0 +1,251 @@
+.menuItemContainer{     /* Just to make room for divs beside each other to have margins. The same olgic as spcing gallery photos*/
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+.menuItem{   /* column inside the item for the description to stay above the extra info */
+    margin: 10px 0px;
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;   /*Just put start because it won't make diff for description and pic because they occupy all but will let the extra detais at the bottom be on the left */
+}
+
+.menuItemDetails{  /*row for the image to be beside the description*/
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    margin: auto;
+}
+
+.menuItemTitleAndDescription{
+    color: #FF7022;
+    font-size: 100px;
+    height: 10vh;
+    width: 26vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.menuDescription{
+    color: #7D390C;
+    font-size: 70px;
+}
+
+
+.menuItemPrice img{
+    width: 280px;
+    height: 280px;
+    margin-left: 4vw;
+
+}
+
+.menuItemPrice span{
+    display: block;
+    position:relative;
+    top: -180px;
+    left: 4.6vw;
+    color: #fff;
+    font-size: 64px;
+    width: 10vw;
+}
+
+.extraInfoOrganiser{
+    display: flex;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width:850px) and (max-width: 3900px){
+
+
+    .menuItemContainer{     /* Just to make room for divs beside each other to have margins. The same olgic as spcing gallery photos*/
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .menuItem{   /* column inside the item for the description to stay above the extra info */
+        margin: 10px 0px;
+        width: 40vw;
+        height: 16vh;
+        display: flex;
+        flex-direction: column;
+        align-items: start;   /*Just put start because it won't make diff for description and pic because they occupy all but will let the extra detais at the bottom be on the left */
+    }
+    
+    .menuItemDetails{  /*row for the image to be beside the description*/
+        display: flex;
+        justify-content: center;
+        height: 10vh;
+        margin: auto;
+    }
+    
+    .menuItemTitleAndDescription{
+        color: #FF7022;
+        font-size: 22px;
+        height: 10vh;
+        width: 32.6vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    
+    .menuDescription{
+        color: #7D390C;
+        font-size: 20px;
+    }
+    
+    
+    .menuItemPrice img{
+        width: 80px;
+        height: 80px;
+
+    
+    }
+    
+    .menuItemPrice span{
+        display: block;
+        position:relative;
+        top: -56px;
+        left: 5.6vw;
+        color: #fff;
+        font-size: 16px;
+        width: 60px;
+
+    }
+    
+    .extraInfoOrganiser{
+        display: flex;
+    }
+
+
+
+}
+
+
+
+
+@media (min-width:30px) and (max-width: 849px){
+    .menuItemContainer{     /* Just to make room for divs beside each other to have margins. The same olgic as spcing gallery photos*/
+        width: 80vw;
+        display: flex;
+        justify-content: center;    
+    }
+    
+    .menuItem{   /* column inside the item for the description to stay above the extra info */
+        margin: 10px 0px;
+        width: 80vw;
+        height: 18vh;
+        display: flex;
+        flex-direction: column;
+        align-items: start;   /*Just put start because it won't make diff for description and pic because they occupy all but will let the extra detais at the bottom be on the left */
+    }
+    
+    .menuItemDetails{  /*row for the image to be beside the description*/
+        display: flex;
+        justify-content: center;
+        height: 10vh;
+        margin: auto;
+    }
+    
+    .menuItemTitleAndDescription{
+        color: #FF7022;
+        font-size: 22px;
+        height: 8vh;
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    
+    .menuDescription{
+        color: #7D390C;
+        font-size: 20px;
+    }
+    
+    
+    .menuItemPrice img{
+        width: 80px;
+        height: 80px;
+        margin-left: 4vw;
+    
+    }
+    
+    .menuItemPrice span{
+        display: block;
+        position:relative;
+        top: -56px;
+        left: 44px;
+        color: #fff;
+        font-size: 18px;
+        width: 10vw;
+    }
+    
+    .extraInfoOrganiser{
+        display: flex;
+    }
+
+
+
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width:10px) and (max-width: 629px){
+    .menuItemContainer{ 
+        width: 80vw;
+    }
+
+    .menuItem{   /* column inside the item for the description to stay above the extra info */
+        width: 80vw;
+        height: inherit;
+        margin-bottom: 40px;
+
+    }
+
+
+    .menuItemTitleAndDescription{
+        width: 50vw;
+    }
+
+
+    
+    .menuItemPrice span{
+        
+        width: 60px;
+    }
+
+    .extraInfoOrganiser{
+        flex-direction: column;
+    }
+
+    .menuItemPrice span{
+        display: block;
+        position:relative;
+        top: -56px;
+        left: 32px;
+        color: #fff;
+        font-size: 18px;
+        width: 18vw;
+
+    }
+    
+}
+
+
+
+
+
+
+

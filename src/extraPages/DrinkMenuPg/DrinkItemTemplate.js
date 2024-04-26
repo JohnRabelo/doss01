@@ -1,34 +1,34 @@
-import menuItemcl from './DrinkItemTemplate.module.css'
-import MenuInfo from '../../components/Menu/MenuExtraInfo.js';
+import dessertsItemcl from './DrinkItemTemplate.module.css'
+import MenuInfo from '../../components/Menu/MenuExtraInfo.js'
 import dummyPriceTag from '../../assets/images/dsPhotos/icons/menus/orangeIconPrice.png'
 
-function DrinkItemTemplateElement(props){
+function DessertsItemTemplateElement(props){
     return <div>
 
 
 
-        <div className={menuItemcl.menuItemContainer}>
-            <div className={menuItemcl.menuItem}>  {/*column inside the item for the description to stay above the extra info*/} 
-                <div className={menuItemcl.menuItemDetails}>{/*row for the image to be beside the description*/} 
-                    <div className={menuItemcl.menuItemTitleAndDescription}>
+        <div className={dessertsItemcl.menuItemContainer}>
+            <div className={dessertsItemcl.menuItem}>  {/*column inside the item for the description to stay above the extra info*/} 
+                <div className={dessertsItemcl.menuItemDetails}>{/*row for the image to be beside the description*/} 
+                    <div className={dessertsItemcl.menuItemTitleAndDescription}>
                         {props.Title && <p>{props.Title}</p>}
-                        <div className={menuItemcl.menuDescription}>
+                        <div className={dessertsItemcl.menuDescription}>
                             {props.Description && <p>{props.Description}</p>}
                         </div>
-                        <div className={menuItemcl.extraInfoOrganiser}>
-                            {props.ExtraInfo1 && <MenuInfo ExtraInfo={props.ExtraInfo1} ExtraPrice={props.ExtraPrice1} />}
-                            {props.ExtraInfo2 && <MenuInfo ExtraInfo={props.ExtraInfo2} ExtraPrice={props.ExtraPrice2} />}
-                        </div>
+                    <div className={dessertsItemcl.extraInfoOrganiser}>
+                        {props.ExtraInfo1 && <MenuInfo ExtraInfo={props.ExtraInfo1} ExtraPrice={props.ExtraPrice1} />}
+                        {props.ExtraInfo2 && <MenuInfo ExtraInfo={props.ExtraInfo2} ExtraPrice={props.ExtraPrice2} />}
                     </div>
-                    <div className={menuItemcl.menuItemPrice}>
+                    </div>
+                    <div className={dessertsItemcl.menuItemPrice}>
                         {props.Price && <img src={dummyPriceTag} alt=""/>}
                         {props.Price && <span>{props.Price}</span>}
-
                     </div>
                 </div> 
+
             </div> 
 
-            <div className={menuItemcl.extraDetails} >
+            <div className={dessertsItemcl.extraDetails} >
                 <div>
                     
                 </div>
@@ -48,4 +48,4 @@ function DrinkItemTemplateElement(props){
     </div>;
 }
 
-export default DrinkItemTemplateElement;
+export default DessertsItemTemplateElement;

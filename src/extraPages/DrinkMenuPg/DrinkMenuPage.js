@@ -1,4 +1,4 @@
-import menucl from './DrinkMenuPage.module.css'
+import dessertscl from './DrinkMenuPage.module.css'
 
 import mainMenu from '../../assets/images/dsPhotos/icons/menus/mainMenu.JPG'
 import lunch from '../../assets/images/dsPhotos/icons/menus/lunch.JPG'
@@ -6,199 +6,56 @@ import drinks from '../../assets/images/dsPhotos/icons/menus/drinks.JPG'
 import desserts from '../../assets/images/dsPhotos/icons/menus/desserts.JPG'
 import MenuTemplateElement from '../../components/Menu/MenuTemplate.js'
 import MenuTemplateElementSides from '../../components/Menu/MenuTemplateSides'
-import DrinkTemplateElement from './DrinkTemplate'
+import DessertsTemplateElement from './DrinkTemplate'
 import { NavLink } from 'react-router-dom'
+import { Document, Page } from 'react-pdf'
 
-const BEER_DATA = [
-    {
-        Title: 'ESTRELLA DAMM (SPAIN) (4.6%)',
-        Description: false,
-        Price: '£ 4.95',
-        ExtraInfo1: 'Half Pint',
-        ExtraPrice1: '£3.25',
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    },
-    {
-        Title: 'PISTONHEAD LAGER (SWEDEN) (4.6%)',
-        Description: false,
-        Price: '£ 4.95',
-        ExtraInfo1:  'Half Pint',
-        ExtraPrice1: '£3.25',
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    },
-]
 
-const BEER_DATA2 = [
+ 
+
+const DESSERTS_DATA = [
     {
-        Title: 'HEFEWEIZEN WHEAT ALE',
-        Description: false,
-        Price: '£ 5.00',
-        ExtraInfo1:  false,
+        Title: 'Galanti Prosecco Extra Dry, (Italy)',
+        Description: 'BRONZE (NV) International Wine & Spirit Competition 2014.Fresh, vibrant & refreshing.' ,
+        Price: '£25.00',
+        ExtraInfo1: false,
         ExtraPrice1: false,
         ExtraInfo2: false,
         ExtraPrice2: false,
         ExtraDetail: false,
     },
     {
-        Title: 'BULMERS ORIGINAL',
-        Description: false,
-        Price: '£ 4.95',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    }
-    
-];
-
-const BEER_DATA3 = [
-    {
-        Title: 'SOL',
-        Description: false,
-        Price: '£ 4.50',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    },
-    {
-        Title: 'DESPERADOS',
-        Description: false,
-        Price: '£ 4.20',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    },
-    {
-        Title: 'PACIFICO CLARA',
-        Description: false,
-        Price: '£ 5.25',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    },
-    {
-        Title: 'MODELO',
-        Description: false,
-        Price: '£ 5.50',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    }
-
-]
-
-
-const REDWINE_DATA = [
-
-    {
-        Title:'EL VELERO TEMPRANILLO TINTO ALBALI, VALDENPEÑAS, SPAIN',
-        Description: 'Fruit-driven, a good match for light meat and vegetable based dishes',
+        Title: 'Cullinan View Chenin Blanc, Western Cape, (South Africa)',
+        Description: 'A great partner for chicken and vegetable dishes with a touch of sweetness to them. Bottle for £16.00',
         Price: '£16.00',
-        ExtraInfo1:  'GLASS 175ml £4.25',
-        ExtraPrice1: '£ 5.50',
-        ExtraInfo2: false,
-        ExtraPrice2: false,
+        ExtraInfo1:  '250ML',
+        ExtraPrice1: '£5.50',
+        ExtraInfo2: '175ML',
+        ExtraPrice2: '£4.25',
         ExtraDetail: false,
     },
     {
-        Title:'TIERRA MERLOT, CENTRAL VALLEY, CHILE',
-        Description: 'A great all-rounder, as good with food as it is on it’s own',
+        Title: 'Parini Pinot Grigio(Italy)',
+        Description: 'Distinctive nose of wild flowers, with touches of honey and banana; soft, fresh and lively with notes of ripe pear. Bottle for £18.00',
         Price: '£18.00',
-        ExtraInfo1:  'GLASS 175ml £4.75',
-        ExtraPrice1: '£ 6.25',
-        ExtraInfo2: false,
-        ExtraPrice2: false,
+        ExtraInfo1:  '250ML',
+        ExtraPrice1: '£6.25',
+        ExtraInfo2: '175ML',
+        ExtraPrice2: '£4.75',
         ExtraDetail: false,
     },
     {
-        Title:'CALLIA LUNARIS MALBEC, SAN JUAN, ARGENTINA',
-        Description: 'Turns the heat up when paired with spicy dishes or peps up grilled or roasted beef dishes',
+        Title: 'Errázuriz 1870 Peñuelas Block Sauvignon Blanc, Casablanca Valley, (Chile) ',
+        Description: 'Classic Casablanca herbs, cut grass and tropical fruit. Bottle for £21.00',
         Price: '£21.00',
-        ExtraInfo1:  'GLASS 175ml £5.50',
-        ExtraPrice1: '£ 7.00',
-        ExtraInfo2: false,
-        ExtraPrice2: false,
+        ExtraInfo1:  '250ML',
+        ExtraPrice1: '£7.00',
+        ExtraInfo2: '175ML',
+        ExtraPrice2: '£5.50',
         ExtraDetail: false,
     },
     {
-        Title:'PABLO OLD VINE GARNACHA, CALATAYUD, SPAIN',
-        Description: 'Spicy, robust and powerful, just like the label!',
-        Price: '£26.00',
-        ExtraInfo1:  null,
-        ExtraPrice1: null,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    },
-    {
-        Title:'PORTILLO PINOT NOIR, UCO VALLEY, ARGENTINA',
-        Description: 'Light on tannin, high on flavour, simply luscious',
-        Price: '£27.00',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    },
-    {
-        Title:'L.A. CETTO PETITE SIRAH, VALLE DE GUADALUPE, MEXICO',
-        Description: 'A true taste of Mexico, the grape is similar to Shiraz, smooth yet spicy',
-        Price: '£32.00',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    }
-    
-]
-
-const WHITEWINE_DATA =[
-    {
-        Title:'CULLINAN VIEW CHENIN BLANC, WESTERN CAPE, S. AFRICA',
-        Description: 'A great partner for chicken and vegetable dishes with a touch of sweetness to them',
-        Price: '£16.00',
-        ExtraInfo1:  'GLASS 175ml £4.25',
-        ExtraPrice1: '£ 5.50',
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    },
-    {
-        Title:'PARINI PINOT GRIGIO, ITALY',
-        Description: 'Distinctive nose of wild flowers, with touches of honey and banana; soft, fresh and lively with notes of ripe pear',
-        Price: '£18.00',
-        ExtraInfo1:  'GLASS 175ml £4.75',
-        ExtraPrice1: '£ 6.25',
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    },
-    {
-        Title:'ERRÁZURIZ 1870 PEÑUELAS BLOCK SAUVIGNON BLANC, CASABLANCA VALLEY, CHILE',
-        Description: 'Classic Casablanca herbs, cut grass and tropical fruit',
-        Price: '£21.00',
-        ExtraInfo1:  'GLASS 175ml £5.50',
-        ExtraPrice1: '£ 7.00',
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    },
-    {
-        Title:'DON JACOBO RIOJA BLANCO, BODEGAS CORRAL, SPAIN',
+        Title: 'Don Jacobo Rioja Blanco, Bodegas Corral, (Spain)',
         Description: 'Light and refreshing, a mouth-watering partner for salads and seafood',
         Price: '£26.00',
         ExtraInfo1:  false,
@@ -208,7 +65,7 @@ const WHITEWINE_DATA =[
         ExtraDetail: false,
     },
     {
-        Title:'ERRÁZURIZ CHARDONNAY WILD FERMENT, CASABLANCA VALLEY, CHILE',
+        Title: 'Errázuriz Chardonnay Wild Ferment, Casablanca Valley, (Chile)',
         Description: 'SILVER (2013) International Wine Challenge 2014. Just perfect with chicken and spice',
         Price: '£32.00',
         ExtraInfo1:  false,
@@ -218,37 +75,49 @@ const WHITEWINE_DATA =[
         ExtraDetail: false,
     },
     {
-        Title:'ANTONIO RUBINI PINOT GRIGIO ROSE DELLE VENEZIE, ITALY',
-        Description: 'Soft and fruity ‘PG’ rosé, good with chicken, salads and seafood.',
+        Title: 'Antonio Rubini Pinot Grigio Rosé delle Venezie, (Italy)',
+        Description: 'Soft and fruity ‘PG’ rosé, good with chicken, salads and seafood. Bottle for £18.00',
         Price: '£18.00',
-        ExtraInfo1:  'GLASS 175ml £4.75',
-        ExtraPrice1: '£ 6.25',
-        ExtraInfo2: false,
-        ExtraPrice2: false,
+        ExtraInfo1:  '250ML',
+        ExtraPrice1: '£6.25',
+        ExtraInfo2: '175ML',
+        ExtraPrice2: '£4.75',
         ExtraDetail: false,
-    }
-]
-
-
-const SPARKLING_DATA = [
+    },
     {
-        Title:'GALANTI PROSECCO EXTRA DRY, ITALY',
-        Description: 'BRONZE (NV) International Wine & Spirit Competition 2014. Fresh, vibrant & refreshing fizz',
-        Price: '£25.00',
-        ExtraInfo1: false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
+        Title: 'El Velero Tempranillo Tinto Albali, Valdepeñas, (Spain)',
+        Description: 'Fruit-driven, a good match for light meat and vegetable based dishes. Bottle for £16.00',
+        Price: '£16.00',
+        ExtraInfo1:  '250ML',
+        ExtraPrice1: '£5.50',
+        ExtraInfo2: '175ML',
+        ExtraPrice2: '£4.25',
         ExtraDetail: false,
-    }
-
-]
-
-const SPIRITS_DATA1 = [
+    },
     {
-        Title:'SINGLE (25ML)',
-        Description: 'AMARETTO • ARCHERS • BACARDI • BAILEYS • BRANDY • GIN • WILD TURKEY • JÄEGERMEISTER • MALIBU • SAMBUCA • SAILOR JERRY • BACARDI CARTA NEGRA • TIA MARIA • TUACA • VODKA • WHISKEY • LARIUS • SOBIESKI • AGUA RIVA TEQUILA • PAMPERO • PAMPERO ESPECIAL',
-        Price: '£ 3.95',
+        Title: 'Tierra Merlot, Central Valley, (Chile)',
+        Description: 'A great all-rounder, as good with food as it is on it’s own. Bottle for £18.00',
+        Price: '£18.00',
+        ExtraInfo1:  '250ML',
+        ExtraPrice1: '£6.25',
+        ExtraInfo2: '175ML',
+        ExtraPrice2: '£4.75',
+        ExtraDetail: false,
+    },
+    {
+        Title: 'Callia Lunaris Malbec, San Juan, (Argentina)',
+        Description: 'Turns the heat up when paired with spicy dishes or peps up grilled or roasted beef dishes. Bottle for £21.00',
+        Price: '£21.00',
+        ExtraInfo1:  '250ML',
+        ExtraPrice1: '£7.00',
+        ExtraInfo2: '175ML',
+        ExtraPrice2: '£5.50',
+        ExtraDetail: false,
+    },
+    {
+        Title: 'Pablo Old Vine Garnacha, Calatayud, (Spain)',
+        Description: 'Spicy, robust and powerful, just like the label!',
+        Price: '£26.00',
         ExtraInfo1:  false,
         ExtraPrice1: false,
         ExtraInfo2: false,
@@ -256,22 +125,9 @@ const SPIRITS_DATA1 = [
         ExtraDetail: false,
     },
     {
-        Title:'JUG OF SANGRIA',
-        Description: false,
-        Price: '£15.95',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    }
-]
-
-const SPIRITS_DATA2 =[
-    {
-        Title:'DOUBLE (50ML)',
-        Description: 'AMARETTO • ARCHERS • BACARDI • BAILEYS • BRANDY • GIN • WILD TURKEY • JÄEGERMEISTER • MALIBU • SAMBUCA • SAILOR JERRY • BACARDI CARTA NEGRA • TIA MARIA • TUACA • VODKA • WHISKEY • LARIUS • SOBIESKI • AGUA RIVA TEQUILA • PAMPERO • PAMPERO ESPECIAL',
-        Price: '£ 5.00',
+        Title: 'Portillo Pinot Noir, Uco Valley, Mendoza, (Argentina)',
+        Description: 'Light on tannin, high on flavour, simply luscious.',
+        Price: '£27.00',
         ExtraInfo1:  false,
         ExtraPrice1: false,
         ExtraInfo2: false,
@@ -279,22 +135,9 @@ const SPIRITS_DATA2 =[
         ExtraDetail: false,
     },
     {
-        Title:'JUG OF PIMM’S',
-        Description: false,
-        Price: '£15.95',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    }
-]
-
-const SOFTDRINKS_DATA1= [
-    {
-        Title:'COKE',
-        Description: false,
-        Price: '£ 2.95',
+        Title: 'L.A. Cetto Petite Sirah, Valle de Guadalupe, (Mexico)',
+        Description: 'A true taste of Mexico, the grape is similar to Shiraz, smooth yet spicy',
+        Price: '£32.00',
         ExtraInfo1:  false,
         ExtraPrice1: false,
         ExtraInfo2: false,
@@ -302,9 +145,9 @@ const SOFTDRINKS_DATA1= [
         ExtraDetail: false,
     },
     {
-        Title:'DIET COKE',
-        Description: false,
-        Price: '£ 2.95',
+        Title: 'COCA COLA • DIET COKE • SPRITE • FANTA',
+        Description: '',
+        Price: '£2.95',
         ExtraInfo1:  false,
         ExtraPrice1: false,
         ExtraInfo2: false,
@@ -312,9 +155,9 @@ const SOFTDRINKS_DATA1= [
         ExtraDetail: false,
     },
     {
-        Title:'FENTIMANS BOTANICALLY ORGANIC',
-        Description: 'ROSE LEMONADE * GINGER BEER',
-        Price: '£ 3.25',
+        Title: 'FENTIMANS BOTANICALLY ORGANIC',
+        Description: 'ROSE LEMONADE • GINGER BEER',
+        Price: '£3.25',
         ExtraInfo1:  false,
         ExtraPrice1: false,
         ExtraInfo2: false,
@@ -322,9 +165,9 @@ const SOFTDRINKS_DATA1= [
         ExtraDetail: false,
     },
     {
-        Title:'PINEAPPLE JUICE',
-        Description: false,
-        Price: '£ 2.75',
+        Title: 'FOLKINGTON’S 100% FRUIT JUICE',
+        Description: 'APPLE JUICE • ORANGE JUICE',
+        Price: '£3.00',
         ExtraInfo1:  false,
         ExtraPrice1: false,
         ExtraInfo2: false,
@@ -332,9 +175,9 @@ const SOFTDRINKS_DATA1= [
         ExtraDetail: false,
     },
     {
-        Title:'CRANBERRY JUICE',
-        Description: false,
-        Price: '£ 2.75',
+        Title: 'PINEAPPLE JUICE • CRANBERRY JUICE',
+        Description: '',
+        Price: '£2.75',
         ExtraInfo1:  false,
         ExtraPrice1: false,
         ExtraInfo2: false,
@@ -342,23 +185,9 @@ const SOFTDRINKS_DATA1= [
         ExtraDetail: false,
     },
     {
-        Title:'FRUIT SMOOTHIES',
-        Description: 'STRAWBERRY * RASPBERRY * PASSION FRUIT * MANGO',
-        Price: '£ 4.25',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    } 
-]
-
-
-const SOFTDRINKS_DATA2= [
-    {
-        Title:'SPRITE',
-        Description: false,
-        Price: '£ 2.95',
+        Title: 'STILL WATER • SPARKLING WATER',
+        Description: '',
+        Price: '£2.50',
         ExtraInfo1:  false,
         ExtraPrice1: false,
         ExtraInfo2: false,
@@ -366,9 +195,9 @@ const SOFTDRINKS_DATA2= [
         ExtraDetail: false,
     },
     {
-        Title:'FANTA',
-        Description: false,
-        Price: '£ 1.95',
+        Title: 'FRUIT SMOOTHIES',
+        Description: 'STRAWBERRY • RASPBERRY • PASSION FRUIT • MANGO',
+        Price: '£4.25',
         ExtraInfo1:  false,
         ExtraPrice1: false,
         ExtraInfo2: false,
@@ -376,9 +205,9 @@ const SOFTDRINKS_DATA2= [
         ExtraDetail: false,
     },
     {
-        Title:'FOLKINGTON’S 100% FRUIT JUICE',
-        Description: 'APPLE JUICE * ORANGE JUICE',
-        Price: '£ 3.00',
+        Title: 'Pint of soft drink',
+        Description: '',
+        Price: '£3.50',
         ExtraInfo1:  false,
         ExtraPrice1: false,
         ExtraInfo2: false,
@@ -386,9 +215,9 @@ const SOFTDRINKS_DATA2= [
         ExtraDetail: false,
     },
     {
-        Title:'STILL WATER',
-        Description: false,
-        Price: '£ 2.50',
+        Title: 'FILTER COFFEE',
+        Description: '',
+        Price: '£2.75',
         ExtraInfo1:  false,
         ExtraPrice1: false,
         ExtraInfo2: false,
@@ -396,9 +225,9 @@ const SOFTDRINKS_DATA2= [
         ExtraDetail: false,
     },
     {
-        Title: 'SPARKLING WATER',
-        Description: false,
-        Price: '£ 2.50',
+        Title: 'ENGLISH BREAKFAST TEA • EARL GREY • CAMOMILE • GREEN TEA • PEPPERMINT • FRUIT TEA',
+        Description: '',
+        Price: '£2.00',
         ExtraInfo1:  false,
         ExtraPrice1: false,
         ExtraInfo2: false,
@@ -406,141 +235,485 @@ const SOFTDRINKS_DATA2= [
         ExtraDetail: false,
     },
     {
-        Title:'PINT OF SOFT DRINK',
-        Description: false,
-        Price: '£ 3.50',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    } 
-]
-
-
-const HOTDRINKS_DATA1= [
-    {
-        Title:'FILTER COFFEE',
-        Description: false,
-        Price: '£ 2.75',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    },
-    {
-        Title:'EARL GREY',
-        Description: false,
-        Price: '£ 2.00',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    },
-    {
-        Title:'GREEN TEA',
-        Description: false,
-        Price: '£ 2.00',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    },
-    {
-        Title:'FRUIT TEA',
-        Description: false,
-        Price: '£ 2.00',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    }
-]
-
-
-const HOTDRINKS_DATA2= [
-    {
-        Title:'ENGLISH BREAKFAST TEA',
-        Description: false,
-        Price: '£ 2.00',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    },
-    {
-        Title:'CAMOMILE',
-        Description: false,
-        Price: '£ 2.00',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    },
-    {
-        Title:'PEPPERMINT',
-        Description: false,
-        Price: '£ 2.00',
-        ExtraInfo1:  false,
-        ExtraPrice1: false,
-        ExtraInfo2: false,
-        ExtraPrice2: false,
-        ExtraDetail: false,
-    },
-    {
-        Title:'LIQUEUR COFFEES',
+        Title: 'LIQUEUR COFFEES',
         Description: 'FRENCH COFFEE (BRANDY) • IRISH COFFEE (WHISKEY) • BAILEYS COFFEE • JAMAICAN COFFEE (TIA MARIA) • MEXICAN COFFEE (OLMECA REPOSADO TEQUILA)',
-        Price: '£ 4.50',
+        Price: '£4.50',
         ExtraInfo1:  false,
         ExtraPrice1: false,
         ExtraInfo2: false,
         ExtraPrice2: false,
         ExtraDetail: false,
-    }
+    },
+    {
+        Title: 'MARGARITA',
+        Description: 'Strawberry, Raspberry, Passion Fruit, Mango: Frozen or Classic Tequila blanco, triple sec, fruit puree and lime juice',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'Bloody mary',
+        Description: 'vodka, tomato juice, Worcestershire sauce, salt, pepper and tabasco',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'FRENCH MARTINI',
+        Description: 'Vodka, pineapple and chambord',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'COSMOPOLITAN',
+        Description: 'Vodka, triple sec, lime and cranberry',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'AMARETTO SOUR',
+        Description: 'Amaretto Disaronno, bitters and lemon juice',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'MOJITO',
+        Description: 'Strawberry, Raspberry, Passion Fruit, Mango or Classic Rum, fresh mint, fresh lime and sugar',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'LONG ISLAND ICE TEA',
+        Description: 'Vodka, rum, tequila, gin, triple sec, lemon juice and coke',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'BRIGHTON CALLING',
+        Description: 'Gin, agave, fresh mint, cucumber, soda and a dash of apple juice',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'TEQUILA SUNRISE',
+        Description: 'Tequila, orange juice and grenadine',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'CAIPIRINHA',
+        Description: 'Cachaça, lime, sugar and crushed ice',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'SEX ON THE BEACH',
+        Description: 'Vodka, archers, orange and cranberry juice',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'MEXICAN BUTTERFLY',
+        Description: 'Olmeca reposado, malibu, pineapple juice and grenadine',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'PALOMA',
+        Description: 'Tequila, lime juice, passion fruit puree and pineapple juice',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'MEXICAN WOO WOO',
+        Description: 'Vodka, tequila, agave, cranberry and lime juice',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'DAIQUIRI',
+        Description: 'Strawberry, Raspberry, Passion Fruit or Mango Rum, fresh lime, fruit puree and sugar syrup. Served frozen or classic',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'PIÑA COLADA',
+        Description: 'Rum, Malibu, yoghurt liqueur, lime and pineapple juice',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'ZOMBIE',
+        Description: 'White rum, dark rum, apricot brandy, sugar syrup and pineapple, orange and lime juice. Topped with grenadine',
+        Price: '£7.25',
+        ExtraInfo1:  '2 for',
+        ExtraPrice1: '£13.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'JUGS OF COCKTAILS ',
+        Description: '',
+        Price: '£35.00',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'ESTRELLA DAMM (SPAIN) (4.6%) DRAUGHT BEER (PINT)',
+        Description: '',
+        Price: '£4.95',
+        ExtraInfo1:  'HALF',
+        ExtraPrice1: '£3.25',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'PISTONHEAD LAGER (SWEDEN) (4.6%) DRAUGHT BEER (PINT)',
+        Description: '',
+        Price: '£4.95',
+        ExtraInfo1:  'HALF',
+        ExtraPrice1: '£3.25',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'SOL BOTTLE BEER',
+        Description: '',
+        Price: '£3.95',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'PACIFICO CLARA (355ML) BOTTLE BEER',
+        Description: '',
+        Price: '£4.50',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'DESPERADOS BOTTLE BEER',
+        Description: '',
+        Price: '£4.20',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'BULMERS ORIGINAL CIDER',
+        Description: '',
+        Price: '£4.95',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'BULMERS PEAR CIDER',
+        Description: '',
+        Price: '£4.95',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'BULMERS CRUSHED BERRIES CIDER',
+        Description: '',
+        Price: '£4.95',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'Hefeweizen wheat ale (DAY OF THE DEAD BEER)',
+        Description: '',
+        Price: '£5.00',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'I.P.A (DAY OF THE DEAD BEER)',
+        Description: '',
+        Price: '£5.00',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'cubanisto (rum flavoured) (DAY OF THE DEAD BEER)',
+        Description: '',
+        Price: '£4.50',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'SPIRITS (SINGLE-25ML)',
+        Description: 'ADD A MIXER FOR £1: AMARETTO • ARCHERS • BACARDI • BAILEYS • BRANDY • GIN • WILD TURKEY • JÄEGERMEISTER • MALIBU • SAMBUCA • SAILOR JERRY • BACARDI CARTA NEGRA • TIA MARIA • TUACA • VODKA • WHISKEY • LARIUS • SOBIESKI • AGUA RIVA TEQUILA • PAMPERO • PAMPERO ESPECIAL',
+        Price: '£3.95',
+        ExtraInfo1:  'DOUBLE (50ML)',
+        ExtraPrice1: '£5.00',
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'JUG OF SANGRIA',
+        Description: '',
+        Price: '£15.95',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'JUG OF PIMM’S ',
+        Description: '',
+        Price: '£15.95',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'COCONUT 1800 TEQUILA',
+        Description: '',
+        Price: '£3.50',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'AQUA RIVA TEQUILA ',
+        Description: 'BLANCO, REPOSADO',
+        Price: '£3.50',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'OLMECA ALTOS TEQUILA',
+        Description: 'BLANCO, REPOSADO',
+        Price: '£4.00',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'CAZCABEL TEQUILA',
+        Description: 'COFFEE, HONEY',
+        Price: '£4.25',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'EL JIMADOR TEQUILA',
+        Description: 'BLANCO, REPOSADO',
+        Price: '£4.25',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'HERRADURA TEQUILA',
+        Description: 'BLANCO, REPOSADO',
+        Price: '£4.50',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'DON JULIO TEQUILA',
+        Description: 'BLANCO, REPOSADO, ANĒJO',
+        Price: '£5.00',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'PATRÓN TEQUILA',
+        Description: 'BLANCO, REPOSADO, ANĒJO, CAFÉ, CITRÓNGE',
+        Price: '£5.00',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'KAH TEQUILAS ',
+        Description: '',
+        Price: '£5.00',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'JOSÉ CUERVO LA FAMILIA TEQUILA',
+        Description: '',
+        Price: '£8.00',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
+    {
+        Title: 'DON JULIO 1942 TEQUILA',
+        Description: '',
+        Price: '£10.00',
+        ExtraInfo1:  false,
+        ExtraPrice1: false,
+        ExtraInfo2: false,
+        ExtraPrice2: false,
+        ExtraDetail: false,
+    },
 ]
 
 
-
-
-
-function DrinksMenuPage(){
+function DessertsMenuPage(){
     return <div>
 
-         
+
         <div>
-            <div className={menucl.menus}>
-                <div className={menucl.menuButtom}>
-                    <NavLink to='/menus'><a className={menucl.menusImg} href='' target='_blank'><img src={mainMenu} alt=""/></a></NavLink>
+            <div className={dessertscl.menus}>
+                <div className={dessertscl.menuButtom}>
+                    <NavLink to='/menus'><a className={dessertscl.menusImg} href='' target='_blank'><img src={mainMenu} alt=""/></a></NavLink>
                 </div>
-                {/*<div className={menucl.menuButtom}>
-                    <NavLink to='/lunch-menu'><a className={menucl.menusImg} href='' target='_blank'><img src={lunch} alt=""/></a></NavLink>
+                {/*<div className={dessertscl.menuButtom}>
+                    <NavLink to='/lunch-menu'><a className={dessertscl.menusImg} href='' target='_blank'><img src={lunch} alt=""/></a></NavLink>
                 </div>*/}
-                <div className={menucl.menuButtom}>
-                    <NavLink to='/drink-menu'><a className={menucl.menusImg} href='' target='_blank'><img src={drinks} alt=""/></a></NavLink>
+                <div className={dessertscl.menuButtom}>
+                    <NavLink to='/drink-menu'><a className={dessertscl.menusImg} href='' target='_blank'><img src={drinks} alt=""/></a></NavLink>
                 </div>
-                <div className={menucl.menuButtom}>
-                    <NavLink to='/desserts-menu'><a className={menucl.menusImg} href='' target='_blank'><img src={desserts} alt=""/></a></NavLink>
+                <div className={dessertscl.menuButtom}>
+                    <NavLink to='/desserts-menu'><a className={dessertscl.menusImg} href='' target='_blank'><img src={desserts} alt=""/></a></NavLink>
                 </div>
-
 
             </div>
 
-            <div className={menucl.dksoon}>
+            <div className={dessertscl.menuLayout} >
+                <p className={dessertscl.mTitle} >DRINKS</p>  {/*As the title refers to both columns, It's not put individually inside of each*/} 
+                <DessertsTemplateElement List= {DESSERTS_DATA} /> {/*Pass a whole list as prop  1-2*/}
+            </div>
+
+            <div className={dessertscl.menuParagraphs}>
+                <p>SEE OUR COCKTAIL AND SPECIAL TEQUILA MENU<span>!</span></p>
+                <p>MAKE SURE YOU ENJOY OUR GREAT FOOD & DRINKS OFFERS</p>
 
             </div>
-            
 
         </div>
 
-    
+
 
     </div>;
 }
 
-export default DrinksMenuPage;
+export default DessertsMenuPage;

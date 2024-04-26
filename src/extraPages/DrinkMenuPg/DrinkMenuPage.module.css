@@ -1,7 +1,3 @@
-.dksoon{
-    height: 100vh;
-}
-
 .menus{
     display: flex;
     justify-content: center;
@@ -22,20 +18,19 @@
     margin: 60px 20px;
 
 }
-
 /* ------------------------------------------------------------------------------------------------------------------------------------ */
 
 .menuLayout{
     width: 80vw;
     margin: auto;
-
 }
 
 
 .menuAreas{
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+
 }
 
 .menuAreaIndiv{
@@ -45,11 +40,11 @@
 }
 
 .mTitle{
-    padding-left: 140px;
+    padding-left: 9.6vw;
     font-size: 120px;
     margin-top: 6vh;
     margin-bottom: 40px;
-    width: 10vw;
+    width: 30vw;
 }
 
 .saladObs{
@@ -136,24 +131,20 @@
     color: #000;
 }
 
-
-
-
-
 /* ------------------------------------------------------------------------------------------------------------------------------------ */
 
 
-
-
-@media (min-width:30px) and (max-width: 3900px){
+@media (min-width:450px) and (max-width: 3900px){
 
 
     .menus{
 
         width: 100vw;
         max-width: 980px;
-
+    
     }
+
+
 
     .menus img{
         width: 160px;
@@ -164,52 +155,11 @@
         margin: 60px 10px;
     }
 
-
-
-
-
-    .menuLayout{
-        width: 68vw;
-        max-width: 700px;
-        margin: auto;
-    }
-
     .mTitle{
-        padding-left: 14px;
+        margin-top: 60px;
+        width: 80vw;
         font-size: 22px;
-        margin-top: 6vh;
-        margin-bottom: 40px;
-        min-width: 200px;
-        max-width: 300px;
     }
-
-    .menuAreas{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 80px;
-    }
-
-    
-
-    .menuAreaIndiv{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 40px;
-
-
-    }
-
-
-    .especDescription p{
-        font-size: 16px;
-    }
-
-    .menuDisclaimer {
-        margin-bottom: 40px;
-    }
-
 
     .menuParagraphs{
         display: flex;
@@ -219,15 +169,18 @@
         width: 80vw;
         max-width: 700px;
         color: #90B95D;
-        font-size: 32px;
+        font-size: 24px;
         margin-top: 100px;
         margin-bottom: 100px;
     }
     
+
+
+
 }
 
 
-@media (min-width:10px) and (max-width: 800px){
+@media (min-width:10px) and (max-width: 700px){
 
     .menus{
         width: 60vw;
@@ -236,7 +189,7 @@
         flex-wrap: wrap;
     }
 
-    .menusImg{
+    .menus img{
         width: 140px;
         height: 40px;
     }
@@ -248,10 +201,14 @@
     .menuButtom:hover{
         border-bottom: 4px solid #FF7022;
     }
+
+
+    
+
 }
 
 
-@media (min-width:10px) and (max-width: 629px){
+@media (min-width:10px) and (max-width: 449px){
 
     .menuLayout{
         width: 80vw;
@@ -259,28 +216,14 @@
     }
 
 
-    .menuAreas{
-
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-
-    .menuAreaIndiv{
-        justify-content: center;
-    }
-
     .mTitle{
-        padding-left: 0px;
+        margin-top: 60px;
         width: 80vw;
+        font-size: 20px;
     }
 
     .menuParagraphs{
         font-size: 22px;
         width: 80vw;
     }
-
-
-
 }

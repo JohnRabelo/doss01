@@ -31,7 +31,11 @@ function HomePage(){
                             <img src={bannerImg} alt='' />
                         </div>
                     </section>
+                    <div className={homecl.tripAdvisor}>
+                        <a href='https://www.tripadvisor.co.uk/Restaurant_Review-g186273-d3163717-Reviews-Dos_Sombreros-Brighton_East_Sussex_England.html' target='_blank'><img src={tripAdvisor} alt=""/></a>
+                    </div>
                     <section className={homecl.homePage} >
+                        
                         <div className={homecl.sectionDescription}>Welcome to Dos Sombreros! Brighton's best Mexican restaurant, <br/> serving up sizzling fajitas and margaritas all year round.
                         <br/><br/>
                         <span className={homecl.redText}>Whether enjoying a romantic meal for two or partying with a large group of friends, we'll make<br/> 
@@ -50,9 +54,9 @@ function HomePage(){
                     <div className={homecl.bienvenido}>
                         Our friendly team hope to welcome you soon. Siempre bienvenido!
                     </div>
-                    <div className={homecl.tripAdvisor}>
+                    {/*<div className={homecl.tripAdvisor}>
                         <a href='https://www.tripadvisor.co.uk/Restaurant_Review-g186273-d3163717-Reviews-Dos_Sombreros-Brighton_East_Sussex_England.html' target='_blank'><img src={tripAdvisor} alt=""/></a>
-                    </div>
+                    </div>*/}
                 </main>
             </body>
             </html>

@@ -72,9 +72,9 @@ function DessertsMenuPage(){
                 <div className={dessertscl.menuButtom}>
                     <NavLink to='/menus'><a className={dessertscl.menusImg} href='' target='_blank'><img src={mainMenu} alt=""/></a></NavLink>
                 </div>
-                <div className={dessertscl.menuButtom}>
+                {/*<div className={dessertscl.menuButtom}>
                     <NavLink to='/lunch-menu'><a className={dessertscl.menusImg} href='' target='_blank'><img src={lunch} alt=""/></a></NavLink>
-                </div>
+                </div>*/}
                 <div className={dessertscl.menuButtom}>
                     <NavLink to='/drink-menu'><a className={dessertscl.menusImg} href='' target='_blank'><img src={drinks} alt=""/></a></NavLink>
                 </div>

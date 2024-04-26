@@ -60,19 +60,19 @@ body{
     margin-top: 10vh;
     text-align: center;
     padding-top: 60px;
-    font-size: 120px;
+    font-size: 4vh;
     font-weight: bold;
     color: #000;
 }
 
 .redText{
     color: #C43C52;
-    font-size: 120px;
+    font-size: 4vh;
 }
 
 .greenText{
     color: #9FB876;
-    font-size: 120px;
+    font-size: 4vh;
 }
 
 .homeAddress{
@@ -103,7 +103,8 @@ body{
     color: #C43C52;
     font-weight: bold;
     text-align: center;
-    font-size: 120px;
+    font-size: 4vh;
+    min-height: 200px;
 }
 
 .tripAdvisor{

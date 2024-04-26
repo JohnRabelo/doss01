@@ -521,9 +521,9 @@ function MenuPage(){
                 {/*  <div className={menucl.menuButtom}>
                     <NavLink to='/'><a className={menucl.menusImg} href='' target='_blank'><img src={mainMenu} alt=""/></a></NavLink>
                 </div>*/}
-                <div className={menucl.menuButtom}>
+                {/*<div className={menucl.menuButtom}>
                     <NavLink to='/lunch-menu'><a className={menucl.menusImg} href='' target='_blank'><img src={lunch} alt=""/></a></NavLink>
-                </div>
+                </div>*/}
                 <div className={menucl.menuButtom}>
                     <NavLink to='/drink-menu'><a className={menucl.menusImg} href='' target='_blank'><img src={drinks} alt=""/></a></NavLink>
                 </div>

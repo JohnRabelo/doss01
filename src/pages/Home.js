@@ -33,6 +33,7 @@ function HomePage(){
                     </section>
                     <div className={homecl.tripAdvisor}>
                         <a href='https://www.tripadvisor.co.uk/Restaurant_Review-g186273-d3163717-Reviews-Dos_Sombreros-Brighton_East_Sussex_England.html' target='_blank'><img src={tripAdvisor} alt=""/></a>
+                        <div id="TA_certificateOfExcellence184" class="TA_certificateOfExcellence"><ul id="xPTNaeI" class="TA_links KKdjAoDU"><li id="PSK8FZ" class="oKDBTqcW"><a target="_blank" href="https://www.tripadvisor.co.uk/Restaurant_Review-g186273-d3163717-Reviews-Dos_Sombreros-Brighton_East_Sussex_England.html"><img src="https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2022_LL.png" alt="TripAdvisor" class="widCOEImg" id="CDSWIDCOELOGO"/></a></li></ul></div>
                     </div>
                     <section className={homecl.homePage} >
                         

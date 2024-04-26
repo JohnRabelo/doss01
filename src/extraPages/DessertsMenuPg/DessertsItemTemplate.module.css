@@ -10,7 +10,7 @@
     height: 10vh;
     display: flex;
     flex-direction: column;
-    align-items: start;   /*Just put start because it won't make diff for description and pic because they occupy all but will let the extra detais at the bottom be on the left */
+    align-items: center;   /*Just put start because it won't make diff for description and pic because they occupy all but will let the extra detais at the bottom be on the left */
 
 }
 

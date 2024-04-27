@@ -8,8 +8,8 @@ import MenuTemplateElement from '../../components/Menu/MenuTemplate.js'
 import MenuTemplateElementSides from '../../components/Menu/MenuTemplateSides'
 import DessertsTemplateElement from './DrinkTemplate'
 import { NavLink } from 'react-router-dom'
-import { Document, Page } from 'react-pdf'
-
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack.js'
+import drinksImg from '../../assets/images/dsPhotos/icons/DosSombrerosDrinks.jpg'
 
  
 
@@ -697,7 +697,10 @@ function DessertsMenuPage(){
                 </div>
 
             </div>
-
+            
+            <div>
+                <img src={drinksImg} alt='Drinks'/>
+            </div>
             <div className={dessertscl.menuLayout} >
                 <p className={dessertscl.mTitle} >DRINKS</p>  {/*As the title refers to both columns, It's not put individually inside of each*/} 
                 <DessertsTemplateElement List= {DESSERTS_DATA} /> {/*Pass a whole list as prop  1-2*/}

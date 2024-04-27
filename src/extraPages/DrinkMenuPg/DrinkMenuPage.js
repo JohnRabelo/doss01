@@ -698,7 +698,7 @@ function DessertsMenuPage(){
 
             </div>
             
-            <div>
+            <div className={dessertscl.drinksMenuImg}>
                 <img src={drinksImg} alt='Drinks'/>
             </div>
             <div className={dessertscl.menuLayout} >

@@ -40,7 +40,6 @@ function App() {
           <Route path='contact' element={<ContactPage/>}/>
           <Route path='cocktail-bar' element={<CocktailPage/>} />
           <Route path='drink-menu' element={<DrinksMenuPage/>} />
-          <Route path='desserts-menu' element={<DessertsMenuPage/>} />
           <Route path='lunch-menu' element={<MenuPage/>} />
           <Route path='brighton-venue-hire' element={<VenuePage/>} />
           <Route path='restuarant-jobs-brighton' element={<JobsPage/>} />

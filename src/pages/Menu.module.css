@@ -8,6 +8,12 @@
 
 }
 
+.drinksMenuImg img{
+    display: flex;
+    margin: auto;
+    width: 90vw;
+}
+
 .menusImg{
     width: 9vw;
     height: 6vh;

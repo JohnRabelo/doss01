@@ -689,27 +689,14 @@ function DessertsMenuPage(){
                 {/*<div className={dessertscl.menuButtom}>
                     <NavLink to='/lunch-menu'><a className={dessertscl.menusImg} href='' target='_blank'><img src={lunch} alt=""/></a></NavLink>
                 </div>*/}
-                <div className={dessertscl.menuButtom}>
-                    <NavLink to='/drink-menu'><a className={dessertscl.menusImg} href='' target='_blank'><img src={drinks} alt=""/></a></NavLink>
-                </div>
-                <div className={dessertscl.menuButtom}>
-                    <NavLink to='/desserts-menu'><a className={dessertscl.menusImg} href='' target='_blank'><img src={desserts} alt=""/></a></NavLink>
-                </div>
-
             </div>
             
             <div className={dessertscl.drinksMenuImg}>
                 <img src={drinksImg} alt='Drinks'/>
             </div>
-            <div className={dessertscl.menuLayout} >
-                <p className={dessertscl.mTitle} >DRINKS</p>  {/*As the title refers to both columns, It's not put individually inside of each*/} 
-                <DessertsTemplateElement List= {DESSERTS_DATA} /> {/*Pass a whole list as prop  1-2*/}
-            </div>
 
             <div className={dessertscl.menuParagraphs}>
-                <p>SEE OUR COCKTAIL AND SPECIAL TEQUILA MENU<span>!</span></p>
                 <p>MAKE SURE YOU ENJOY OUR GREAT FOOD & DRINKS OFFERS</p>
-
             </div>
 
         </div>
